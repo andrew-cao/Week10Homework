@@ -5,7 +5,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <link rel="stylesheet" href="https://andrew-cao.github.io/Week10Homework/css/css_file.css">
-  <script src = "https://andrew-cao.github.io/Assignment2/js/js_file.js" defer></script>
+  <script src = "https://andrew-cao.github.io/Week10Homework/js/js_file.js" defer></script>
   <title> Week 10 Homework - Andrew Cao </title>
 </head>
 <body>
@@ -20,28 +20,30 @@ A visualisation by Andrew Cao
 
 <div class="a">
 
-	<div id="vis_1"></div>
+	<div id="vis_chl"></div>
 
 	<script type="text/javascript">
 	  var spec = "https://raw.githubusercontent.com/andrew-cao/Week10Homework/main/js/chloropleth_pop.json";
-	  vegaEmbed('#vis_1', spec).then(function(result) {
+	  vegaEmbed('#vis_chl', spec).then(function(result) {
 		// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 	  }).catch(console.error);
+	</script>
 
 </div>
 
 <div class="b">
 
-	<div id="vis_2"></div>
+	<div id="vis_sca"></div>
  
 	<script type="text/javascript">
 	  var spec = "https://raw.githubusercontent.com/andrew-cao/Week10Homework/main/js/pop_gdp_scatter.json";
-	  vegaEmbed('#vis_2', spec).then(function(result) {
+	  vegaEmbed('#vis_sca', spec).then(function(result) {
 		// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 	  }).catch(console.error);
+	</script>
 	  
 </div>
 	  
-</script>
+
 </body>
 </html>
